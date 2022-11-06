@@ -1,1 +1,8 @@
-// it will be written as soon as i'll figure out how the hell pinterest api works
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function() {
+  fetch("https://api.themotivate365.com/stoic-quote")
+    .then((response) => response.json())
+    .then((data) => 
+      console.log(data)
+      )})
