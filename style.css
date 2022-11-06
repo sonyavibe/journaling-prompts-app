@@ -46,8 +46,33 @@ h1 {
 .picture {
   width: 320px;
   height: 320px;
-  background: #DEDEDE;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.03);
   border-radius: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:20px;
+  text-shadow: 0px 4px 49px rgba(236, 184, 254, 0.95);;
+  color:black;
+  margin: 10px 10px 5px 10px;
+}
+
+.author {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+margin: 10px 0px 10px 10px;
 }
 
 .refresh-btn {
@@ -118,6 +143,19 @@ span {
     height: 380px;
   }
   
+  .quote {
+    font-size: 35px;
+    line-height: 35px;
+    text-shadow: 0px 4px 49px #ECB8FE;
+    margin: 20px 20px 8px 20px;
+  }
+  
+  .author {
+  font-size: 32px;
+  line-height: 32px;
+  margin: 20px 0px 20px 20px;
+  }
+
   .refresh-btn {
     position: absolute;
     transform: translate(50px, 40px);
@@ -193,6 +231,26 @@ p {
   height: 192px;
   font-size: 32px;
   line-height: 33px;
+}
+
+.quote {
+  width: 540px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 49px;
+  text-shadow: 0px 4px 49px #ECB8FE;
+  color:black;
+}
+
+.author {
+  font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 33px;
+color: #000000;
 }
 
 }
