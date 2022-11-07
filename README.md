@@ -10,6 +10,7 @@ the web-app is fully responsive and can adapt to mobile and tablet versions. her
 <br><br>
 -- <i>tablet version: </i><br>
 <img src="https://github.com/sonyavibe/journaling-prompts-app-pet-project/blob/main/for%20readme/ipad.PNG">
+<br><br>
 -- <i>desktop version: </i><br>
 <img src="https://github.com/sonyavibe/journaling-prompts-app-pet-project/blob/main/for%20readme/desktop.PNG">
 <br><br>
