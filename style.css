@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 h1 {
@@ -28,6 +29,7 @@ h1 {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
+  z-index: 11;
 }
 
 .container {
@@ -52,6 +54,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 10;
 }
 
 .quote {
@@ -63,6 +66,7 @@ h1 {
   text-shadow: 0px 4px 49px rgba(236, 184, 254, 0.95);;
   color:black;
   margin: 10px 10px 5px 10px;
+  z-index: 11;
 }
 
 .author {
@@ -73,6 +77,7 @@ font-size: 18px;
 line-height: 18px;
 color: #000000;
 margin: 10px 0px 10px 10px;
+z-index: 11;
 }
 
 .refresh-btn {
@@ -95,6 +100,19 @@ margin: 10px 0px 10px 10px;
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+    transition: all 150ms linear;
+    background-color: #E0FF9F;
+}
+
+.refresh-btn:active {
+  transition: ease-in-out 100ms linear;
+  background-color: #E8FFB7;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1), 0px 4px 28px #ECB8FE;
 }
 
 .arrow {
@@ -103,6 +121,7 @@ margin: 10px 0px 10px 10px;
   top: 340px;
   left: 250px;
   transform: rotate(65deg);
+  z-index: 9;
 }
 
 p {
@@ -113,10 +132,32 @@ p {
   font-weight: 500;
   font-size: 20px;
   line-height: 33px;
+  z-index: 9;
 }
 
 span {
   color: #ECB8FE
+
+}
+
+.star {
+  --size: 20vmin;
+  --holes: calc(var(--size)*.495);
+  width: var(--size);
+  aspect-ratio: 1/1;
+  position: fixed;
+  background: white;  
+  --mask: radial-gradient(var(--holes) at var(--holes) var(--holes), #0000 99%,#000) calc(var(--holes)*-1) calc(var(--holes)*-1);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 50%;
+  animation: sparkle 1s linear forwards;
+  z-index: 1;
+}
+@keyframes sparkle {
+  0% { transform: scale(0); }
+  25% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 @media only screen and (min-width: 768px) {
