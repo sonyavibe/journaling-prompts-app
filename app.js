@@ -15,7 +15,7 @@ btn.addEventListener('click', function() {
     .catch(error => console.log(error));
     })
 
-    function addStar() {
+   /* function addStar() {
       var s = document.createElement('div')
       s.className = 'star'
       s.style.setProperty('--size', Math.random()*10 + 3 + 'vmin')
@@ -25,3 +25,4 @@ btn.addEventListener('click', function() {
       document.body.appendChild(s)
     }
     setInterval(addStar,50)
+*/ 
