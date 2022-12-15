@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.header {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 60px;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 56px #ECB8FE;
+  border-radius: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+h1 {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  z-index: 11;
+}
+
+.container {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.picture {
+  width: 320px;
+  height: 320px;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 54px rgba(0, 0, 0, 0.03);
+  border-radius: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+}
+
+.quote {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height:20px;
+  text-shadow: 0px 4px 49px rgba(236, 184, 254, 0.95);;
+  color:black;
+  margin: 10px 10px 5px 10px;
+  z-index: 11;
+}
+
+.author {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 18px;
+color: #000000;
+margin: 10px 0px 10px 10px;
+z-index: 11;
+}
+
+.refresh-btn {
+  position: absolute;
+  left: 50%;
+  top: 260px;
+  width: 150px;
+  height: 50px;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 56px #ECB8FE;
+  border-radius: 26px;
+  border: none;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.refresh-btn:hover {
+    transition: all 150ms linear;
+    background-color: #E0FF9F;
+}
+
+.refresh-btn:active {
+  transition: ease-in-out 100ms linear;
+  background-color: #E8FFB7;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1), 0px 4px 28px #ECB8FE;
+}
+
+.arrow {
+  width: 80px;
+  position: absolute;
+  top: 340px;
+  left: 250px;
+  transform: rotate(65deg);
+  z-index: 9;
+}
+
+p {
+  width: 200px;
+  height: 150px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  z-index: 9;
+}
+
+span {
+  color: #ECB8FE
+
+}
+
+.star {
+  --size: 20vmin;
+  --holes: calc(var(--size)*.495);
+  width: var(--size);
+  aspect-ratio: 1/1;
+  position: fixed;
+  background: white;  
+  --mask: radial-gradient(var(--holes) at var(--holes) var(--holes), #0000 99%,#000) calc(var(--holes)*-1) calc(var(--holes)*-1);
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  border-radius: 50%;
+  animation: sparkle 1s linear forwards;
+  z-index: 1;
+}
+@keyframes sparkle {
+  0% { transform: scale(0); }
+  25% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: 600px;
+    height: 100px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .container {
+    top: 200px;
+    width: 600px;
+    height: 550px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .picture {
+    width: 600px;
+    height: 380px;
+  }
+  
+  .quote {
+    font-size: 35px;
+    line-height: 35px;
+    text-shadow: 0px 4px 49px #ECB8FE;
+    margin: 20px 20px 8px 20px;
+  }
+  
+  .author {
+  font-size: 32px;
+  line-height: 32px;
+  margin: 20px 0px 20px 20px;
+  }
+
+  .refresh-btn {
+    position: absolute;
+    transform: translate(50px, 40px);
+    width: 230px;
+    height: 62px;
+    font-size: 36px;
+    line-height: 37px;
+    padding: 19px;
+  }
+  
+  .arrow {
+    width: 120px;
+    position: absolute;
+    top: 400px;
+    left: 500px;
+    transform: rotate(65deg);
+  }
+  
+  p {
+    width: 400px;
+    height: 100px;
+    font-size: 32px;
+    line-height: 33px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+.header {
+  width: 900px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.container {
+  top: 100px;
+  width: 900px;
+  height: 550px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picture {
+  width: 600px;
+  height: 380px;
+}
+
+.refresh-btn {
+  position: absolute;
+  left: 300px;
+  top: 340px;
+  width: 230px;
+  height: 62px;
+  font-size: 36px;
+  line-height: 37px;
+  padding: 19px;
+}
+
+.arrow {
+  width: 120px;
+  position: absolute;
+  top: 55px;
+  left: 600px;
+  transform: rotate(-15deg);
+}
+
+p {
+  width: 203px;
+  height: 192px;
+  font-size: 32px;
+  line-height: 33px;
+}
+
+.quote {
+  width: 540px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  text-shadow: 0px 4px 49px #ECB8FE;
+  color:black;
+}
+
+.author {
+  font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 33px;
+color: #000000;
+}
+
+}
