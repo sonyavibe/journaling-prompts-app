@@ -1,7 +1,7 @@
 # journaling-prompts-app-pet-project
 a simple app that gets a random stoic quote using external API and gets you a prompt for daily journaling :)
 
-:paperclips:you can play with it here: https://sonyavibe.github.io/journaling-prompts-app-pet-project/
+:paperclips:you can play with it here: https://sonyavibe.github.io/journaling-prompts-app/
 
 ![](https://github.com/sonyavibe/journaling-prompts-app-pet-project/blob/master/for%20readme/jp1.gif)
 
